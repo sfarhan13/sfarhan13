@@ -1,0 +1,22 @@
+Find assigned IP address to UniFi from DHCP Server
+
+ssh AP with assigned IP address
+
+ssh admin@10.0.40.1
+user: ubnt
+password: ubnt
+
+To restore-default
+
+syswrapper.sh restore-default
+
+Run below commands only for the adoption
+
+It is mendatory UniFi must be to its default settings
+If AP is its default settings, the ssh username will be: ubnt and password will be: ubnt
+
+Run below two commands:
+
+mca-cli
+
+set-inform http://10.0.40.1:8080/inform
